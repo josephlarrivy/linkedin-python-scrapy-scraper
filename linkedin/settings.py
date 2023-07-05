@@ -7,6 +7,12 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
+import os
+from dotenv import load_dotenv, dotenv_values
+
+load_dotenv()
+
+
 BOT_NAME = 'linkedin'
 
 SPIDER_MODULES = ['linkedin.spiders']
@@ -17,7 +23,7 @@ NEWSPIDER_MODULE = 'linkedin.spiders'
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = False
 
-SCRAPEOPS_API_KEY = '82362a01-de1e-4128-bf71-afd51a66da2d'
+SCRAPEOPS_API_KEY = os.getenv(scrapeops_api_key)
 
 SCRAPEOPS_PROXY_ENABLED = True
 
