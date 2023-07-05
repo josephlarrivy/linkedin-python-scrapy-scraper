@@ -17,7 +17,7 @@ NEWSPIDER_MODULE = 'linkedin.spiders'
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = False
 
-SCRAPEOPS_API_KEY = 'YOUR_API_KEY'
+SCRAPEOPS_API_KEY = '82362a01-de1e-4128-bf71-afd51a66da2d'
 
 SCRAPEOPS_PROXY_ENABLED = True
 
